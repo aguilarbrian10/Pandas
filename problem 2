@@ -1,7 +1,7 @@
 import pandas as pd
 cars = pd.read_csv('C:\\Users\\Brian\\.spyder-py3\\cars.csv')
 
-cars.loc[1:9:2]
+cars.iloc[0:5,1:12:2]
 # displays the first five rows with odd-numbered columns of cars
 
 cars[cars.loc[:,'Model']=='Mazda RX4']
